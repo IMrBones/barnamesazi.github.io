@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*background: #211d42;*/
+    font-family: "Ubuntu", "Noto Naskh Arabic";
+}
+
+body {
+    transition: 0.5s;
+}
+
+body.dark-mode {
+    background: #1d1a39;
+}
+
+header {
+    padding: 30px, 5%;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 99%;
+    padding: 30px 100px;
+    background: rgb(45, 51, 73);
+    display: flex;
+    align-items: center;
+    z-index: 99;
+    justify-content: center;
+    margin : 0.5% 0.5% 0.5% 0.5%;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+#theme-button {
+    color: #e7f5ff;
+    margin-left: auto;
+    margin-right: 5%;
+    cursor: pointer;
+    width: 2%;
+    transform: scaleX(-1);
+    transition: 0.5s;
+}
+
+.logo {
+    font-size: 30px;
+    color: #e7f5ff;
+    text-decoration: none;
+    font-weight: 800;
+    background: rgba(21, 27, 48, 0);
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-left: -5%;
+    background: rgba(21, 27, 48, 0);
+}
+
+nav a {
+    background: rgba(21, 27, 48, 0);
+    text-align: center;
+    color: #e7f5ff;
+    text-decoration: none;
+    margin-left: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 20px;
+    
+}
+
+nav a:hover {
+    color: #b15dc2;
+}
+
+.student-button {
+    cursor: pointer;
+    color: rgb(45, 51, 73);
+    transition: 0.5s;
+    font-size: 25px;
+    font-weight: 900;
+    margin-right: 1.5%;
+}
+
+body.dark-mode .student-button:hover {
+    color: #b15dc2;
+}
+
+.student-button:hover {
+    color: #b15dc2;
+}
+
+.studentlist {
+    
+}
+
+.student-details {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+table {
+    margin-right: 0.5%;
+    width: 99%;
+    border-spacing: 0 0.5em;
+    /* border-spacing: 7.5px; */
+}
+
+th, td, tr {
+    border-radius: 0px;
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+    height: 50px;
+    vertical-align: middle;
+    transition: 0.5s;
+    font-size: 100%;
+    overflow: visible;
+    font-weight: 900;
+}
+
+.description {
+    border-radius: 8px 0px 0px 8px;
+}
+
+.studentlist {
+    margin-right: 0.3%;
+}
+
+#rankone > * {
+    /* margin-right: 0.5%; */
+    height: 150px;
+    background: #f6dc5b;
+    /* width: 99%; */
+}
+
+body.dark-mode #rankone > * {
+    background: #e9c928;
+}
+
+#ranktwo {
+    height: 125px;
+}
+
+#ranktwo > * {
+    background: #f6b544;
+}
+
+body.dark-mode #ranktwo > * {
+    background: #df9619;
+}
+
+#rankthree > * {
+    background: #f46b66;
+}
+
+body.dark-mode #rankthree > * {
+    background: #dd423d;
+}
+
+#unranked {
+    height: 100px;
+}
+
+#unrankedlol > * {
+    background: #b9d4e8;
+}
+
+body.dark-mode #unrankedlol > * {
+    background: #74acd5;
+}
+
+.rankmedal {
+    width: 10%;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.name {
+    font-size: 150%;
+    font-weight: 900;
+    width: 20%;
+    border-radius: 0px 0px 0px 0px;
+}
+
+th {
+    background: #dc94eb;
+}
+
+body.dark-mode th {
+    background: #b15dc2;
+}
+
+td {
+    background: #b9d4e8;
+}
+
+body.dark-mode td {
+    background: #74acd5;
+}
+
+body.dark-mode .student-button {
+    color: #e7f5ff;
+}
+
+.poudmangrade {
+    width: 5%;
+    border-radius: 0px 0px 0px 0px;
+}
+
+.arrow {
+    transition: 0.3s;
+    transform: rotate(90deg);
+    display: inline-block;
+}
+
+.arrow.rotate {
+    transform: rotate(0deg);
+}
+
+a > img {
+    width: 1.5%;
+}
+
+.overallscore {
+    border-radius: 0px 0px 0px 0px;
+}
+
+.poudmangradeb {
+    width: 5%;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.id {
+    border-radius: 0px 8px 8px 0px;
+}
