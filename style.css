@@ -36,8 +36,8 @@ header {
 
 #theme-button {
     color: #e7f5ff;
-    margin-left: auto;
-    margin-right: 5%;
+    margin-left: 5%;
+    margin-right: auto;
     cursor: pointer;
     width: 2%;
     transform: scaleX(-1);
@@ -107,8 +107,8 @@ body.dark-mode .student-button:hover {
 table {
     margin-right: 0.5%;
     width: 99%;
-    border-spacing: 0 0.5em;
-    /* border-spacing: 7.5px; */
+    /* border-spacing: 0 0.5em; */
+    border-spacing: 4px;
 }
 
 th, td, tr {
@@ -206,11 +206,6 @@ body.dark-mode .student-button {
     color: #e7f5ff;
 }
 
-.poudmangrade {
-    width: 5%;
-    border-radius: 0px 0px 0px 0px;
-}
-
 .arrow {
     transition: 0.3s;
     transform: rotate(90deg);
@@ -237,3 +232,413 @@ a > img {
 .id {
     border-radius: 0px 8px 8px 0px;
 }
+
+#explainer > .name, #explainer > .overallscore, #explainer > .rankmedal {
+    font-weight: 900;
+    font-size: 20px;
+}
+/* 
+.firstproject {
+    position: relative;
+    cursor: pointer;
+}
+
+.firstproject .tooltiptextone {
+    visibility: hidden;
+    width: 150%;
+    background-color: rgb(53, 53, 53);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -100%;
+    left: 50%;
+    margin-left: -75%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.firstproject:hover .tooltiptextone {
+    visibility: visible;
+    opacity: 1;
+}
+
+.secondproject {
+    position: relative;
+    cursor: pointer;
+}
+
+.secondproject .tooltiptexttwo {
+    visibility: hidden;
+    width: 150%;
+    background-color: rgb(53, 53, 53);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -100%;
+    left: 50%;
+    margin-left: -75%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.secondproject:hover .tooltiptexttwo {
+    visibility: visible;
+    opacity: 1;
+}
+
+.thirdproject {
+    position: relative;
+    cursor: pointer;
+}
+
+.thirdproject .tooltiptextthree {
+    visibility: hidden;
+    width: 150%;
+    background-color: rgb(53, 53, 53);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -100%;
+    left: 50%;
+    margin-left: -75%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.thirdproject:hover .tooltiptextthree {
+    visibility: visible;
+    opacity: 1;
+}
+
+.fourthproject {
+    position: relative;
+    cursor: pointer;
+}
+
+.fourthproject .tooltiptextfour {
+    visibility: hidden;
+    width: 150%;
+    background-color: rgb(53, 53, 53);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -100%;
+    left: 50%;
+    margin-left: -75%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.fourthproject:hover .tooltiptextfour {
+    visibility: visible;
+    opacity: 1;
+}
+
+.fifthproject {
+    position: relative;
+    cursor: pointer;
+}
+
+.fifthproject .tooltiptextfive {
+    visibility: hidden;
+    width: 150%;
+    background-color: rgb(53, 53, 53);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -100%;
+    left: 50%;
+    margin-left: -75%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.fifthproject:hover .tooltiptextfive {
+    visibility: visible;
+    opacity: 1;
+}
+
+.sixthproject {
+    position: relative;
+    cursor: pointer;
+}
+
+.sixthproject .tooltiptextsix {
+    visibility: hidden;
+    width: 150%;
+    background-color: rgb(53, 53, 53);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -100%;
+    left: 50%;
+    margin-left: -75%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.sixthproject:hover .tooltiptextsix {
+    visibility: visible;
+    opacity: 1;
+}
+
+.seventhproject {
+    position: relative;
+    cursor: pointer;
+}
+
+.seventhproject .tooltiptextseven {
+    visibility: hidden;
+    width: 150%;
+    background-color: rgb(53, 53, 53);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -100%;
+    left: 50%;
+    margin-left: -75%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.seventhproject:hover .tooltiptextseven {
+    visibility: visible;
+    opacity: 1;
+}
+
+.eigthproject {
+    position: relative;
+    cursor: pointer;
+}
+
+.eigthproject .tooltiptexteigth {
+    visibility: hidden;
+    width: 150%;
+    background-color: rgb(53, 53, 53);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -100%;
+    left: 50%;
+    margin-left: -75%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.eigthproject:hover .tooltiptexteigth {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ninethproject {
+    position: relative;
+    cursor: pointer;
+}
+
+.ninethproject .tooltiptextnine {
+    visibility: hidden;
+    width: 150%;
+    background-color: rgb(53, 53, 53);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -100%;
+    left: 50%;
+    margin-left: -75%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.ninethproject:hover .tooltiptextnine {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tenthproject {
+    position: relative;
+    cursor: pointer;
+}
+
+.tenthproject .tooltiptextten {
+    visibility: hidden;
+    width: 150%;
+    background-color: rgb(53, 53, 53);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -75%;
+    left: 50%;
+    margin-left: -75%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.tenthproject:hover .tooltiptextten {
+    visibility: visible;
+    opacity: 1;
+}
+
+.eleventhproject {
+    position: relative;
+    cursor: pointer;
+}
+
+.eleventhproject .tooltiptexteleven {
+    visibility: hidden;
+    width: 150%;
+    background-color: rgb(53, 53, 53);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -100%;
+    left: 50%;
+    margin-left: -75%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.eleventhproject:hover .tooltiptexteleven {
+    visibility: visible;
+    opacity: 1;
+}
+
+.twelvethproject {
+    position: relative;
+    cursor: pointer;
+}
+
+.twelvethproject .tooltiptexttwelve {
+    visibility: hidden;
+    width: 150%;
+    background-color: rgb(53, 53, 53);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -100%;
+    left: 50%;
+    margin-left: -75%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.twelvethproject:hover .tooltiptexttwelve {
+    visibility: visible;
+    opacity: 1;
+}
+
+.thirteenthproject {
+    position: relative;
+    cursor: pointer;
+}
+
+.thirteenthproject .tooltiptextthirteen {
+    visibility: hidden;
+    width: 150%;
+    background-color: rgb(53, 53, 53);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -100%;
+    left: 50%;
+    margin-left: -75%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.thirteenthproject:hover .tooltiptextthirteen {
+    visibility: visible;
+    opacity: 1;
+}
+
+.fourteenthproject {
+    position: relative;
+    cursor: pointer;
+}
+
+.fourteenthproject .tooltiptextfourteen {
+    visibility: hidden;
+    width: 150%;
+    background-color: rgb(53, 53, 53);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -100%;
+    left: 50%;
+    margin-left: -75%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.fourteenthproject:hover .tooltiptextfourteen {
+    visibility: visible;
+    opacity: 1;
+}
+
+.poudmangradeb {
+    position: relative;
+    cursor: pointer;
+}
+
+.poudmangradeb .tooltiptextfifteen {
+    visibility: hidden;
+    width: 150%;
+    background-color: rgb(53, 53, 53);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 15%;
+    left: 175%;
+    margin-left: -75%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.poudmangradeb:hover .tooltiptextfifteen {
+    visibility: visible;
+    opacity: 1;
+} */
