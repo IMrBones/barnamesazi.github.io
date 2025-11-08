@@ -39,7 +39,7 @@ header {
     margin-left: 5%;
     margin-right: auto;
     cursor: pointer;
-    width: 2%;
+    width: 40px;
     transform: scaleX(-1);
     transition: 0.5s;
 }
@@ -53,7 +53,7 @@ header {
     cursor: pointer;
 }
 
-nav {
+/* nav {
     display: flex;
     align-items: center;
     margin-left: -5%;
@@ -76,15 +76,8 @@ nav a {
 nav a:hover {
     color: #b15dc2;
 }
+ */
 
-.student-button {
-    cursor: pointer;
-    color: rgb(45, 51, 73);
-    transition: 0.5s;
-    font-size: 25px;
-    font-weight: 900;
-    margin-right: 1.5%;
-}
 
 body.dark-mode .student-button:hover {
     color: #b15dc2;
@@ -109,17 +102,21 @@ table {
     width: 99%;
     /* border-spacing: 0 0.5em; */
     border-spacing: 4px;
+    table-layout: fixed;
 }
 
 th, td, tr {
+    position: relative;
+    max-width: 150px;
+    white-space: nowrap;
+    /* text-overflow:clip; */
     border-radius: 0px;
     text-align: center;
-    padding: 10px 30px 10px 30px;
     height: 50px;
     vertical-align: middle;
     transition: 0.5s;
     font-size: 100%;
-    overflow: visible;
+    /* overflow: hidden; */
     font-weight: 900;
 }
 
@@ -156,6 +153,7 @@ body.dark-mode #ranktwo > * {
 
 #rankthree > * {
     background: #f46b66;
+    height: 80px;
 }
 
 body.dark-mode #rankthree > * {
@@ -175,14 +173,14 @@ body.dark-mode #unrankedlol > * {
 }
 
 .rankmedal {
-    width: 10%;
+    width: 5%;
     border-radius: 0px 8px 8px 0px;
 }
 
 .name {
-    font-size: 150%;
+    font-size: 130%;
     font-weight: 900;
-    width: 20%;
+    width: 8%;
     border-radius: 0px 0px 0px 0px;
 }
 
@@ -222,6 +220,7 @@ a > img {
 
 .overallscore {
     border-radius: 0px 0px 0px 0px;
+    width: 3%;
 }
 
 .poudmangradeb {
@@ -237,408 +236,110 @@ a > img {
     font-weight: 900;
     font-size: 20px;
 }
-/* 
-.firstproject {
-    position: relative;
-    cursor: pointer;
+
+.firstproject, .secondproject, .thirdproject,
+.fourthproject, .fifthproject, .sixthproject,
+.seventhproject, .eigthproject, .ninethproject,
+.tenthproject, .eleventhproject, .twelvethproject,
+.thirteenthproject, .fourteenthproject, .poudmangradeb {
+    position:relative;
+    width: 2.5%;
 }
 
-.firstproject .tooltiptextone {
+.tooltip {
     visibility: hidden;
-    width: 150%;
-    background-color: rgb(53, 53, 53);
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
     position: absolute;
-    z-index: 1;
-    bottom: -100%;
-    left: 50%;
-    margin-left: -75%;
+    left: 110%;
+    bottom: calc(2.5%);
+    /* transform: translateX(0%); */
+    background: rgba(36, 36, 43, 0.5);
+    backdrop-filter: blur(10px);
+    color: #eae5f5;
+    z-index: 100;
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.2s;
+    border-radius: 8px;
+    white-space: normal;
+    padding: 5px 10px;
+    width: 600%;
 }
 
-.firstproject:hover .tooltiptextone {
-    visibility: visible;
+body.dark-mode .tooltip {
+    background: rgba(204, 227, 236, 0.5);
+    color: #1b1a1d;
+}
+
+td:hover > .tooltip {
     opacity: 1;
-}
-
-.secondproject {
-    position: relative;
-    cursor: pointer;
-}
-
-.secondproject .tooltiptexttwo {
-    visibility: hidden;
-    width: 150%;
-    background-color: rgb(53, 53, 53);
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: -100%;
-    left: 50%;
-    margin-left: -75%;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.secondproject:hover .tooltiptexttwo {
     visibility: visible;
-    opacity: 1;
 }
 
-.thirdproject {
-    position: relative;
-    cursor: pointer;
-}
+@media only screen and (max-width: 600px) {
+    .firstproject, .secondproject, .thirdproject,
+    .fourthproject, .fifthproject, .sixthproject,
+    .seventhproject, .eigthproject, .ninethproject,
+    .tenthproject, .eleventhproject, .twelvethproject,
+    .thirteenthproject, .fourteenthproject, .poudmangradeb {
+    display: none;
+    }
 
-.thirdproject .tooltiptextthree {
-    visibility: hidden;
-    width: 150%;
-    background-color: rgb(53, 53, 53);
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: -100%;
-    left: 50%;
-    margin-left: -75%;
-    opacity: 0;
-    transition: 0.3s;
-}
+    .logo {
+        font-size: 150%;
+        color: #e7f5ff;
+        text-decoration: none;
+        font-weight: 800;
+        background: rgba(21, 27, 48, 0);
+        cursor: pointer;
+    }
 
-.thirdproject:hover .tooltiptextthree {
-    visibility: visible;
-    opacity: 1;
-}
+    #theme-button {
+        color: #e7f5ff;
+        margin-left: 0%;
+        
+        cursor: pointer;
+        width: 35px;
+        transform: scaleX(-1);
+        transition: 0.5s;
+    }
+    
 
-.fourthproject {
-    position: relative;
-    cursor: pointer;
-}
+    header {
+        padding: 30px, 5%;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        width: 99%;
+        padding: 30px 20px;
+        background: rgb(45, 51, 73);
+        display: flex;
+        align-items: center;
+        z-index: 99;
+        justify-content: center;
+        margin : 0.5% 0.5% 0.5% 0.5%;
+        border-radius: 8px;
+        transition: 0.5s;
+    }
 
-.fourthproject .tooltiptextfour {
-    visibility: hidden;
-    width: 150%;
-    background-color: rgb(53, 53, 53);
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: -100%;
-    left: 50%;
-    margin-left: -75%;
-    opacity: 0;
-    transition: 0.3s;
-}
+    .rankmedal, .name, .overallscore {
+        width: 100%;
+    }
 
-.fourthproject:hover .tooltiptextfour {
-    visibility: visible;
-    opacity: 1;
-}
+    .rankmedal {
+        width: 50%;
+    }
 
-.fifthproject {
-    position: relative;
-    cursor: pointer;
-}
+    .overallscore {
+        width: 45%;
+        border-radius: 8px 0px 0px 8px;
+    }
 
-.fifthproject .tooltiptextfive {
-    visibility: hidden;
-    width: 150%;
-    background-color: rgb(53, 53, 53);
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: -100%;
-    left: 50%;
-    margin-left: -75%;
-    opacity: 0;
-    transition: 0.3s;
+    #rankone > * {
+        height: 80px;
+    }
+    #ranktwo {
+        height: 70px;
+    }
+    #rankthree > * {
+        height: 60px;
+    }
 }
-
-.fifthproject:hover .tooltiptextfive {
-    visibility: visible;
-    opacity: 1;
-}
-
-.sixthproject {
-    position: relative;
-    cursor: pointer;
-}
-
-.sixthproject .tooltiptextsix {
-    visibility: hidden;
-    width: 150%;
-    background-color: rgb(53, 53, 53);
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: -100%;
-    left: 50%;
-    margin-left: -75%;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.sixthproject:hover .tooltiptextsix {
-    visibility: visible;
-    opacity: 1;
-}
-
-.seventhproject {
-    position: relative;
-    cursor: pointer;
-}
-
-.seventhproject .tooltiptextseven {
-    visibility: hidden;
-    width: 150%;
-    background-color: rgb(53, 53, 53);
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: -100%;
-    left: 50%;
-    margin-left: -75%;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.seventhproject:hover .tooltiptextseven {
-    visibility: visible;
-    opacity: 1;
-}
-
-.eigthproject {
-    position: relative;
-    cursor: pointer;
-}
-
-.eigthproject .tooltiptexteigth {
-    visibility: hidden;
-    width: 150%;
-    background-color: rgb(53, 53, 53);
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: -100%;
-    left: 50%;
-    margin-left: -75%;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.eigthproject:hover .tooltiptexteigth {
-    visibility: visible;
-    opacity: 1;
-}
-
-.ninethproject {
-    position: relative;
-    cursor: pointer;
-}
-
-.ninethproject .tooltiptextnine {
-    visibility: hidden;
-    width: 150%;
-    background-color: rgb(53, 53, 53);
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: -100%;
-    left: 50%;
-    margin-left: -75%;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.ninethproject:hover .tooltiptextnine {
-    visibility: visible;
-    opacity: 1;
-}
-
-.tenthproject {
-    position: relative;
-    cursor: pointer;
-}
-
-.tenthproject .tooltiptextten {
-    visibility: hidden;
-    width: 150%;
-    background-color: rgb(53, 53, 53);
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: -75%;
-    left: 50%;
-    margin-left: -75%;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.tenthproject:hover .tooltiptextten {
-    visibility: visible;
-    opacity: 1;
-}
-
-.eleventhproject {
-    position: relative;
-    cursor: pointer;
-}
-
-.eleventhproject .tooltiptexteleven {
-    visibility: hidden;
-    width: 150%;
-    background-color: rgb(53, 53, 53);
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: -100%;
-    left: 50%;
-    margin-left: -75%;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.eleventhproject:hover .tooltiptexteleven {
-    visibility: visible;
-    opacity: 1;
-}
-
-.twelvethproject {
-    position: relative;
-    cursor: pointer;
-}
-
-.twelvethproject .tooltiptexttwelve {
-    visibility: hidden;
-    width: 150%;
-    background-color: rgb(53, 53, 53);
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: -100%;
-    left: 50%;
-    margin-left: -75%;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.twelvethproject:hover .tooltiptexttwelve {
-    visibility: visible;
-    opacity: 1;
-}
-
-.thirteenthproject {
-    position: relative;
-    cursor: pointer;
-}
-
-.thirteenthproject .tooltiptextthirteen {
-    visibility: hidden;
-    width: 150%;
-    background-color: rgb(53, 53, 53);
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: -100%;
-    left: 50%;
-    margin-left: -75%;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.thirteenthproject:hover .tooltiptextthirteen {
-    visibility: visible;
-    opacity: 1;
-}
-
-.fourteenthproject {
-    position: relative;
-    cursor: pointer;
-}
-
-.fourteenthproject .tooltiptextfourteen {
-    visibility: hidden;
-    width: 150%;
-    background-color: rgb(53, 53, 53);
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: -100%;
-    left: 50%;
-    margin-left: -75%;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.fourteenthproject:hover .tooltiptextfourteen {
-    visibility: visible;
-    opacity: 1;
-}
-
-.poudmangradeb {
-    position: relative;
-    cursor: pointer;
-}
-
-.poudmangradeb .tooltiptextfifteen {
-    visibility: hidden;
-    width: 150%;
-    background-color: rgb(53, 53, 53);
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 15%;
-    left: 175%;
-    margin-left: -75%;
-    opacity: 0;
-    transition: 0.3s;
-}
-
-.poudmangradeb:hover .tooltiptextfifteen {
-    visibility: visible;
-    opacity: 1;
-} */
